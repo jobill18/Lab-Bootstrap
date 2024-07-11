@@ -19,7 +19,7 @@ export default function Values({ values }) {
     <Container className="py-5">
       <Row>
         {values.map(({ title, description, action }) => (
-          <Col key={title}>
+          <Col key={title} xs="12" md="6" lg="4" className="p-4">
             <Value title={title} description={description} action={action} />
           </Col>
         ))}
